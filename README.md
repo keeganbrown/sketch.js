@@ -1,3 +1,8 @@
+## This fork provides API changes to sketch.js necessary to support cocoon js. 
+
+Dev is ongoing as needed.
+
+
 ## sketch.js
 
 A tiny (~2kb gzipped) platform for JavaScript creative coding.
