@@ -1,4 +1,3 @@
-
 /* Copyright (C) 2013 Justin Windle, http://soulwire.co.uk */
 
 var Sketch = (function() {
@@ -255,9 +254,10 @@ var Sketch = (function() {
         function align( touch, target ) {
 
             bounds = target.getBoundingClientRect();
-
-            touch.x = touch.pageX - bounds.left - win.scrollX;
-            touch.y = touch.pageY - bounds.top - win.scrollY;
+            
+            //MODIFICATION MADE TO SUPPORT COCOONJS
+            touch.x = touch.clientX;
+            touch.y = touch.clientY;
 
             return touch;
         }
